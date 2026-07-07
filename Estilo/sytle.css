@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.barra-topo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px 40px;
+}
+
+.barra-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.link-topo {
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.link-topo:hover {
+    color: #4f6bff;
+}
+
+.link-topo:active {
+    transform: scale(0.9);
+}
+
+.elementos {
+    cursor: pointer;
+    transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.elementos:hover {
+    color: #4f6bff;
+}
+
+.elementos:active {
+    transform: scale(0.9);
+}
+
+.inicio {
+    background-image: url("../Imagens/fundo_roxo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 120px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.cadastro {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.cadastro input {
+    background: #fff;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    padding: 16px 24px;
+    width: 350px;
+    max-width: 60%;
+    font-size: 16px;
+    outline: none;
+}
+
+.cadastro button {
+    background: #dc2626;
+    color: #fff;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.cadastro button:hover {
+    background: #bd1ca7;
+}
+
+
+/* ===== TABLET (até 768px) ===== */
+@media (max-width: 768px) {
+
+    .barra-topo {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+
+    .barra-principal {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .inicio {
+        background-attachment: scroll; /* fixed pode travar/bugar em telas menores */
+        min-height: 80vh;
+        padding: 80px 20px;
+    }
+
+    .titulo {
+        font-size: 1.8em;
+    }
+
+    .cadastro {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cadastro input {
+        width: 100%;
+        max-width: 90%;
+        border-radius: 50px; /* volta a ser cápsula inteira, já que não tem botão colado */
+    }
+
+    .cadastro button {
+        width: 90%;
+        max-width: 300px;
+        border-radius: 50px;
+    }
+
+}
+
+
+/* ===== CELULAR (até 480px) ===== */
+@media (max-width: 480px) {
+
+    .titulo {
+        font-size: 1.4em;
+    }
+
+    .inicio {
+        min-height: 70vh;
+        padding: 60px 15px;
+    }
+
+    .link-topo {
+        font-size: 0.85em;
+    }
+
+    .elementos {
+        font-size: 0.95em;
+    }
+
+}
