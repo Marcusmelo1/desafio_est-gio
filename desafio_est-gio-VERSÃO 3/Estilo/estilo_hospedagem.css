@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wordpress-destaque {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+}
+
+.wordpress-texto {
+    flex: 1;
+}
+
+.wordpress-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #4f6bff;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.wordpress-titulo {
+    font-size: 2.8em;
+    font-weight: 800;
+    color: #1f2937;
+    line-height: 1.15;
+    margin-bottom: 24px;
+}
+
+.wordpress-highlight {
+    color: #4f6bff;
+}
+
+.wordpress-descricao {
+    font-size: 1.1em;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    max-width: 480px;
+}
+
+.wordpress-botao {
+    background: #f4667c;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 18px 40px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.wordpress-botao:hover {
+    background: #e04f66;
+}
+
+.wordpress-botao:active {
+    transform: scale(0.96);
+}
+
+.wordpress-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.wordpress-imagem img {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* ===== SEÇÃO SIMPLIFICAMOS / BENEFÍCIOS ===== */
+
+.beneficios-hospedagem {
+    text-align: center;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 40px;
+    font-family: sans-serif;
+
+
+}
+
+.beneficios-titulo {
+    font-size: 2.6em;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 20px;
+    margin-top: 300px;
+}
+
+.beneficios-subtitulo {
+    font-size: 1.15em;
+    color: #4b5563;
+    line-height: 1.6;
+    max-width: 760px;
+    margin: 0 auto 40px auto;
+    margin-top: 100px;
+}
+
+.beneficios-checks {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+
+}
+
+.beneficios-checks-linha2 {
+    margin-bottom: 30px;
+}
+
+.beneficios-check {
+    font-size: 1.05em;
+    color: #1f2937;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.beneficios-check i {
+    color: #4f6bff;
+    font-size: 1.1em;
+}
+
+.beneficios-link {
+    display: inline-block;
+    color: #4f6bff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 60px;
+    font-size: 1.05em;
+}
+
+.beneficios-link:hover {
+    text-decoration: underline;
+}
+
+/* ===== GRID DOS TRÊS CARTÕES ===== */
+.beneficios-cartoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+
+.beneficio-card {
+    background: transparent;
+    border: none;
+    padding: 0;
+    text-align: center;
+    box-shadow: none;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.beneficio-card:hover {
+    transform: scale(1.05);
+}
+
+.beneficio-card img {
+    width: 100%;
+    max-width: 280px;
+    height: 180px;
+    object-fit: cover;
+    margin: 0 auto 24px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.beneficio-card h3 {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 12px;
+}
+
+.beneficio-card p {
+    font-size: 1em;
+    color: #4a5568;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+/* ===== ESPAÇAMENTO ENTRE SEÇÕES (PÁGINA HOSPEDAGEM) ===== */
+
+.beneficios-hospedagem {
+    margin-bottom: 0;
+}
+
+.beneficios-hospedagem+.secao-imagem-texto {
+    margin-top: 120px;
+}
+
+.secao-imagem-texto {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.precos-secao .suporte {
+    margin-top: 100px;
+}
+
+
+/* ===== SEÇÃO DE PREÇOS ===== */
+
+.precos-secao {
+    max-width: 1300px;
+    margin: 100px auto;
+    padding: 0 40px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.precos-titulo {
+    font-size: 2.6em;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 16px;
+
+}
+
+.precos-subtitulo {
+    font-size: 1.3em;
+    color: #4b5563;
+    margin-bottom: 60px;
+}
+
+.precos-destaque {
+    color: #4f6bff;
+    font-weight: bold;
+
+}
+
+.precos-plano-nome {
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #fd5000;
+    margin-bottom: 12px;
+}
+
+.precos-plano-desc {
+    color: #6b7280;
+    font-size: 1.05em;
+    margin-bottom: 40px;
+}
+
+.precos-cartoes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.preco-card {
+    background: #ee3c3c;
+    border-radius: 16px;
+    padding: 30px 20px;
+    color: #fff;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.preco-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.preco-destaque:hover {
+    transform: scale(1.08);
+}
+
+.precos-cartoes-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.preco-valor {
+    font-size: 2.2em;
+    font-weight: 800;
+    color: #22c55e;
+    margin-bottom: 20px;
+}
+
+.preco-moeda {
+    font-size: 0.5em;
+    vertical-align: top;
+    font-weight: 600;
+}
+
+.preco-periodo {
+    font-size: 0.4em;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.preco-botao {
+    width: 100%;
+    background: #f3634a;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 14px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 24px;
+    transition: background 0.2s ease;
+}
+
+.preco-botao:hover {
+    background: #16a34a;
+}
+
+.preco-specs {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.preco-specs li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9em;
+    color: #d1d5db;
+}
+
+.preco-specs li span {
+    margin-left: auto;
+    color: #fff;
+    font-weight: 600;
+}
+
+.preco-specs i {
+    color: #9ca3af;
+    width: 16px;
+}
+
+.preco-destaque {
+    background: #ec0404;
+    transform: scale(1.05);
+}
+
+.preco-destaque .preco-valor {
+    color: #fff;
+}
+
+.preco-destaque .preco-periodo {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.preco-selo {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3a3333;
+    color: #ff7606;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.75em;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.preco-botao-destaque {
+    background: #fa8e02;
+    color: #ffffff;
+}
+
+.preco-botao-destaque:hover {
+    background: #ff4901;
+}
+
+.preco-destaque .preco-specs i {
+    color: rgba(211, 23, 23, 0.7);
+}
+
+
+/* ===== FAQ MAIS ORGANIZADO (PÁGINA HOSPEDAGEM) ===== */
+
+.precos-secao .suporte {
+    max-width: 850px;
+}
+
+.precos-secao .suporte h2 {
+    margin-bottom: 40px;
+}
+
+.precos-secao .pergunta {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 22px 26px;
+    margin-bottom: 14px;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.precos-secao .pergunta:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    border-color: #d1d5db;
+}
+
+.precos-secao .pergunta[open] {
+    background: #fff;
+    border-color: #4f6bff;
+}
+
+.precos-secao .pergunta summary {
+    font-size: 1.1em;
+}
+
+.precos-secao .pergunta p {
+    padding-right: 30px;
+    padding-top: 4px;
+}
+
+
+/* ===== RESPONSIVIDADE (Ajustes para Celular e Tablet) ===== */
+
+@media (max-width: 900px) {
+    .beneficios-cartoes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .beneficios-titulo {
+        font-size: 1.9em;
+    }
+
+    .beneficios-subtitulo {
+        font-size: 1em;
+    }
+
+    .beneficios-cartoes {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .beneficios-checks {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .beneficios-checks-linha2 {
+        margin-top: -3px;
+    }
+}
+
+/* ===== NOTEBOOK / TELAS MÉDIAS (até 1024px) ===== */
+@media (max-width: 1024px) {
+
+    .wordpress-destaque {
+        gap: 40px;
+        padding: 0 30px;
+    }
+
+    .wordpress-titulo {
+        font-size: 2.2em;
+    }
+
+    .wordpress-imagem img {
+        width: 380px;
+    }
+
+    .precos-cartoes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .precos-cartoes-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .preco-destaque {
+        transform: none;
+    }
+
+}
+
+
+/* ===== TABLET (até 768px) ===== */
+@media (max-width: 768px) {
+
+    .wordpress-destaque {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 50px auto;
+        padding: 0 20px;
+        gap: 30px;
+    }
+
+    .wordpress-descricao {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .wordpress-badge {
+        justify-content: center;
+    }
+
+    .wordpress-titulo {
+        font-size: 1.9em;
+    }
+
+    .wordpress-imagem img {
+        width: 300px;
+    }
+
+    .precos-secao {
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+
+    .precos-titulo {
+        font-size: 2em;
+    }
+
+    .precos-subtitulo {
+        font-size: 1.1em;
+        margin-bottom: 40px;
+    }
+
+    .precos-cartoes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .precos-cartoes-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ===== CELULAR (até 480px) ===== */
+@media (max-width: 480px) {
+
+    .wordpress-destaque {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    .wordpress-titulo {
+        font-size: 1.5em;
+    }
+
+    .wordpress-descricao {
+        font-size: 1em;
+    }
+
+    .wordpress-botao {
+        padding: 14px 28px;
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .wordpress-imagem img {
+        width: 240px;
+    }
+
+    .precos-titulo {
+        font-size: 1.6em;
+    }
+
+    .precos-plano-nome {
+        font-size: 1.4em;
+    }
+
+    .precos-cartoes {
+        grid-template-columns: 1fr;
+    }
+
+    .precos-cartoes-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .preco-selo {
+        font-size: 0.7em;
+    }
+
+}

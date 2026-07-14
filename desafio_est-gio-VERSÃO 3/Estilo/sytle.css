@@ -1,0 +1,790 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.barra-topo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px 40px;
+}
+
+.barra-principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 30px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-shrink: 0;
+}
+
+.link-topo {
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.link-topo:hover {
+    color: #4f6bff;
+}
+
+.link-topo:active {
+    transform: scale(0.9);
+}
+
+.elementos {
+    cursor: pointer;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: background 0.2s ease, color 0.15s ease;
+}
+
+.elementos:hover {
+    background-color: #f0f0f0;
+    color: #4f6bff;
+}
+
+.elementos:active {
+    transform: scale(0.9);
+}
+
+.imagem_logo img {
+    width: 320px;
+    height: auto;
+    margin-left: 0;
+    max-width: 100%;
+}
+
+.inicio {
+    
+    background-image: url("../Imagens/fundo_laranja-ezgif.com-resize.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    min-height: 100vh;
+    padding: 120px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3.5em;
+    color: #fff;
+}
+
+.cadastro {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.cadastro input {
+    background: #fff;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    padding: 16px 24px;
+    width: 350px;
+    max-width: 60%;
+    font-size: 16px;
+    outline: none;
+}
+
+.cadastro button {
+    background: #dc2626;
+    color: #fff;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.cadastro button:hover {
+    background: #b91c1c;
+}
+
+.titulo2 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 2.0em;
+}
+
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+    background-color: #e2e0e0;
+    border-radius: 16px;
+    margin: 40px;
+}
+
+.card-destaque {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px 18px;
+    min-height: 340px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-destaque:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-destaque h2 {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.texto-destaque {
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 16px 0 20px;
+}
+/* ===== ÍCONES RESPONSIVOS DOS CARTÕES ===== */
+.icone-plano {
+    font-size: clamp(1.5em, 4vw, 3em);
+    margin: 12px 0;
+    color: #333;
+    transition: font-size 0.2s ease;
+}
+
+.card-destaque h3.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.badge-vermelho {
+    background-color: #dc2626;
+}
+
+.texto-destaque {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 16px 0 20px;
+}
+
+.butao {
+    width: 100%;
+    background: #9ca3af;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 1.05em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.butao:hover {
+    background: #6b7280;
+}
+
+.secao-imagem-texto {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 70px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.secao-imagem-texto:nth-of-type(2) {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+.imagem-container {
+    flex: 0 0 450px;
+    height: 350px;
+}
+
+.imagem-container img {
+    max-width: 500px;
+}
+
+.texto-container {
+    flex: 1;
+}
+
+.texto-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 16px;
+    color: #1f2937;
+}
+
+.texto-container p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.link-destaque {
+    color: #dc2626;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.link-destaque:hover {
+    text-decoration: underline;
+}
+
+
+
+.suporte {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.suporte h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.pergunta {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.pergunta summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    user-select: none;
+}
+
+.pergunta summary::-webkit-details-marker {
+    display: none;
+}
+
+.pergunta summary::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2' stroke='%23333333'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19.5 8.25l-7.5 7.5-7.5-7.5' /%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.2s ease;
+}
+
+.pergunta summary:hover {
+    color: #dc2626;
+}
+
+.pergunta[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.pergunta p {
+    margin-top: 16px;
+    color: #555;
+    font-size: 1.05em;
+    line-height: 1.6;
+    padding-right: 40px;
+}
+
+.rodape {
+    background-color: #111827;
+    color: #d1d5db;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 40px 40px;
+}
+
+.rodape-sobre {
+    flex: 1;
+    min-width: 280px;
+}
+
+.rodape-sobre .logo-rodape {
+    color: #fff;
+    font-size: 1.8em;
+    margin-bottom: 16px;
+}
+
+.rodape-sobre p {
+    color: #9ca3af;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.rodape-sobre a {
+    display: block;
+    color: #d1d5db;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.2s ease;
+}
+
+.rodape-sobre a:hover {
+    color: #fff;
+}
+
+.newsletter-rodape {
+    margin-top: 24px;
+}
+
+.newsletter-rodape h3 {
+    color: #fff;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.newsletter-rodape p {
+    color: #9ca3af;
+    margin-bottom: 12px;
+}
+
+.newsletter-rodape form {
+    display: flex;
+}
+
+.newsletter-rodape input {
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 6px 0 0 6px;
+    padding: 10px 14px;
+    color: #fff;
+    outline: none;
+    flex: 1;
+    min-width: 0;
+}
+
+.newsletter-rodape button {
+    background: #dc2626;
+    color: #fff;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.newsletter-rodape button:hover {
+    background: #b91c1c;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.redes-sociais a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.redes-sociais a:hover {
+    color: #fff;
+}
+
+.rodape-coluna {
+    min-width: 160px;
+}
+
+.rodape-coluna h3 {
+    color: #fff;
+    font-size: 1.05em;
+    margin-bottom: 16px;
+}
+
+.rodape-coluna a {
+    display: block;
+    color: #9ca3af;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+}
+
+.rodape-coluna a:hover {
+    color: #fff;
+}
+
+.rodape-final {
+    background-color: #111827;
+    color: #9ca3af;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-top: 1px solid #374151;
+    font-size: 0.9em;
+}
+
+.links-legais {
+    display: flex;
+    gap: 20px;
+}
+
+.links-legais a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.links-legais a:hover {
+    color: #fff;
+}
+
+/* ===================================================== */
+/* ===== NOTEBOOK / TELAS MÉDIAS (até 1024px) ===== */
+/* ===================================================== */
+@media (max-width: 1024px) {
+
+    .cartoes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .secao-imagem-texto {
+        padding: 50px 40px;
+        gap: 40px;
+    }
+
+    .imagem-container {
+        flex: 0 0 380px;
+        height: 300px;
+    }
+
+    .imagem-container img {
+        max-width: 380px;
+    }
+
+}
+
+
+/* ===================================================== */
+/* ===== TABLET (até 768px) ===== */
+/* ===================================================== */
+@media (max-width: 768px) {
+
+    .barra-topo {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+
+    .barra-principal {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .imagem_logo img {
+        width: 220px;
+        margin-left: 0;
+    }
+
+    .inicio {
+        background-attachment: fixed; /* Parallax mantido fixo para tablets 🚀 */
+        min-height: 80vh;
+        padding: 80px 20px;
+    }
+
+    .titulo {
+        font-size: 1.8em;
+    }
+
+    .cadastro {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cadastro input {
+        width: 100%;
+        max-width: 90%;
+        border-radius: 50px;
+    }
+
+    .cadastro button {
+        width: 90%;
+        max-width: 300px;
+        border-radius: 50px;
+    }
+
+    .titulo2 {
+        margin-top: 60px;
+        font-size: 1.7em;
+        padding: 0 20px;
+    }
+
+    .cartoes {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .card-destaque {
+        min-height: 360px;
+        padding: 20px;
+    }
+
+    .secao-imagem-texto,
+    .secao-imagem-texto:nth-of-type(2) {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        margin: 20px auto;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .imagem-container {
+        justify-content: center;
+        flex: 0 0 auto;
+        height: auto;
+        width: 100%;
+    }
+
+    .imagem-container img {
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .suporte {
+        margin: 50px auto;
+    }
+
+    .suporte h2 {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+
+    .pergunta summary {
+        font-size: 1.05em;
+    }
+
+    .rodape {
+        padding: 40px 25px;
+        gap: 30px;
+    }
+
+    .rodape-final {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        padding: 20px;
+    }
+
+}
+
+
+/* ===================================================== */
+/* ===== CELULAR GRANDE (até 480px) ===== */
+/* ===================================================== */
+@media (max-width: 480px) {
+
+    .barra-topo {
+        gap: 8px;
+        padding: 8px 15px;
+    }
+
+    .link-topo {
+        font-size: 0.85em;
+    }
+
+    .barra-principal {
+        padding: 15px;
+    }
+
+    .imagem_logo img {
+        width: 160px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .elementos {
+        font-size: 0.95em;
+    }
+
+    .titulo {
+        font-size: 1.4em;
+    }
+
+    .inicio {
+        background-attachment: fixed; /* Parallax mantido fixo para celulares 🚀 */
+        min-height: 70vh;
+        padding: 60px 15px;
+    }
+
+    .cadastro input {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    .cadastro button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .titulo2 {
+        font-size: 1.5em;
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+
+    .cartoes {
+        grid-template-columns: 1fr;
+        margin: 15px;
+        padding: 16px;
+        gap: 16px;
+        border-radius: 12px;
+    }
+
+    .card-destaque {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .card-destaque h2 {
+        font-size: 1.15em;
+    }
+
+    .icone-plano {
+        font-size: 1.6em;
+        margin: 8px 0;
+    }
+
+    .texto-destaque {
+        font-size: 0.95em;
+    }
+
+    .butao {
+        padding: 14px;
+        font-size: 1em;
+    }
+
+    .secao-imagem-texto,
+    .secao-imagem-texto:nth-of-type(2) {
+        padding: 30px 15px;
+        margin: 15px auto;
+    }
+
+    .texto-container h2 {
+        font-size: 1.4em;
+    }
+
+    .texto-container p {
+        font-size: 0.95em;
+    }
+
+    .suporte h2 {
+        font-size: 1.5em;
+    }
+
+    .pergunta summary {
+        font-size: 0.95em;
+    }
+
+    .pergunta summary::after {
+        width: 18px;
+        height: 18px;
+    }
+
+    .pergunta p {
+        font-size: 0.9em;
+        padding-right: 20px;
+    }
+
+    .rodape {
+        padding: 30px 20px;
+    }
+
+    .rodape-sobre .logo-rodape {
+        font-size: 1.5em;
+    }
+
+    .newsletter-rodape form {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .newsletter-rodape input {
+        border-radius: 6px;
+    }
+
+    .newsletter-rodape button {
+        border-radius: 6px;
+    }
+
+    .links-legais {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+}
