@@ -234,7 +234,6 @@ html {
     font-weight: 800;
     color: #1f2937;
     margin-bottom: 16px;
-
 }
 
 .precos-subtitulo {
@@ -246,7 +245,6 @@ html {
 .precos-destaque {
     color: #4f6bff;
     font-weight: bold;
-
 }
 
 .precos-plano-nome {
@@ -268,23 +266,26 @@ html {
     gap: 20px;
 }
 
+/* ==========================================
+   CARDS COMUNS (Tema Escuro)
+   ========================================== */
 .preco-card {
-    background: #ee3c3c;
+    background: #25262B;
     border-radius: 16px;
     padding: 30px 20px;
     color: #fff;
     position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid transparent;
+    /* Suaviza a transição de movimento, sombra e borda */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     cursor: pointer;
 }
 
+/* Hover do Card Comum: Sobe suavemente e cria uma borda laranja discreta */
 .preco-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-}
-
-.preco-destaque:hover {
-    transform: scale(1.08);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    border-color: rgba(240, 90, 34, 0.4);
 }
 
 .precos-cartoes-4 {
@@ -296,7 +297,7 @@ html {
 .preco-valor {
     font-size: 2.2em;
     font-weight: 800;
-    color: #22c55e;
+    color: #FFFFFF;
     margin-bottom: 20px;
 }
 
@@ -312,9 +313,12 @@ html {
     color: #ffffff;
 }
 
+/* ==========================================
+   BOTÃO PADRÃO (Cards Escuros)
+   ========================================== */
 .preco-botao {
     width: 100%;
-    background: #f3634a;
+    background: #F05A22;
     color: #ffffff;
     border: none;
     border-radius: 50px;
@@ -323,11 +327,13 @@ html {
     font-weight: bold;
     cursor: pointer;
     margin-bottom: 24px;
-    transition: background 0.2s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease, filter 0.2s ease;
 }
 
+/* Hover do Botão Padrão: Brilha um pouco mais e cresce levemente */
 .preco-botao:hover {
-    background: #16a34a;
+    filter: brightness(1.1);
+    transform: scale(1.03);
 }
 
 .preco-specs {
@@ -357,9 +363,19 @@ html {
     width: 16px;
 }
 
+/* ==========================================
+   CARD DESTAQUE - MAIS VENDIDO (Laranja)
+   ========================================== */
 .preco-destaque {
-    background: #ec0404;
-    transform: scale(1.05);
+    background: #F05A22;
+    transform: scale(1.05); /* Já começa ligeiramente maior */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover do Card Destaque: Sobe ainda mais e ganha um brilho laranja no fundo */
+.preco-destaque:hover {
+    transform: scale(1.05) translateY(-8px) !important; /* Mantém a escala original e sobe */
+    box-shadow: 0 15px 35px rgba(240, 90, 34, 0.4);
 }
 
 .preco-destaque .preco-valor {
@@ -384,19 +400,24 @@ html {
     white-space: nowrap;
 }
 
+/* ==========================================
+   BOTÃO DESTAQUE (Card Laranja)
+   ========================================== */
 .preco-botao-destaque {
     background: #fa8e02;
     color: #ffffff;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
+/* Hover do Botão Destaque: Fica com um laranja mais intenso e cresce levemente */
 .preco-botao-destaque:hover {
     background: #ff4901;
+    transform: scale(1.03);
 }
 
 .preco-destaque .preco-specs i {
-    color: rgba(211, 23, 23, 0.7);
+    color: rgba(255, 255, 255, 0.8); /* Ajustado para ícones brancos suaves no fundo laranja */
 }
-
 
 /* ===== FAQ MAIS ORGANIZADO (PÁGINA HOSPEDAGEM) ===== */
 
